@@ -46,14 +46,14 @@ export default function Escritorio() {
                     { 
                         name: "Dr. Flávio Prates Bitencourt", 
                         role: "Sócio Sênior | Fundador", 
-                        image: "backend/uploads-adv/flavio-bitencourt.jpg",
+                        image: "backend/uploads-adv/flavio.jpeg",
                         bio: "Especialista em Direito do Trabalho, com atuação na defesa de interesses de empresas e seus sócios, além de atuar na área Cível e na liderança de ações estratégicas."
                     },
                     { 
                         name: "Dr. Caymmi Gomes Botelho", 
                         role: "Sócio | Diretor Jurídico", 
                         oab: "OAB/MG 171.105",
-                        image: "backend/uploads-adv/caymmi-botelho.jpg",
+                        image: "backend/uploads-adv/caymmi.jpeg",
                         bio: "Especialista na atuação em Tribunal do Júri e Direito Penal, com atuação em Minas Gerais."
                     },
                     { 
