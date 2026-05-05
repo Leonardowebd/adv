@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitencourt & Dias Advogados | Advocacia Estratégica</title>
+    <meta name="description" content="Escritório de advocacia especializado em Direito do Trabalho, Cível, Tributário e Societário com unidades em MG e BA." />
+    <script>
+      // Emergency fix for "Uncaught TypeError: Cannot set property fetch of #<Window> which has only a getter"
+      // This environment sometimes has window.fetch as a read-only getter.
+      (function() {
+        function patchFetch(target) {
+          if (!target) return;
+          try {
+            var descriptor = Object.getOwnPropertyDescriptor(target, 'fetch');
+            // If it exists and is either not writable OR is just a getter
+            if (descriptor && (descriptor.writable === false || (descriptor.get && !descriptor.set))) {
+              if (descriptor.configurable) {
+                var originalFetch = target.fetch;
+                Object.defineProperty(target, 'fetch', {
+                  get: function() { return originalFetch; },
+                  set: function(v) { 
+                    console.warn('Attempted to overwrite protected fetch. Assignment ignored.');
+                    // Optionally we could store the assigned value if we really wanted to allow polyfilling
+                    // but usually keeping the native fetch is safer in this environment.
+                  },
+                  configurable: true,
+                  enumerable: true
+                });
+              }
+            }
+          } catch (e) {
+            console.error('Failed to patch fetch on', target, e);
+          }
+        }
+        
+        // Apply to multiple possible global targets
+        [window, globalThis, Object.getPrototypeOf(window)].forEach(patchFetch);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

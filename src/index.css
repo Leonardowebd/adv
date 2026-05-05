@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #2d2d2d;
+  --color-primary: #e5e5e5;
+  --color-primary-container: #383838;
+  --color-secondary: #c5a47e;
+  --color-surface: #2d2d2d;
+  --color-surface-container-low: #383838;
+  --color-surface-container-high: #454545;
+  --color-surface-container-highest: #4f4f4f;
+  --color-surface-container-lowest: #242424;
+  --color-on-primary: #000000;
+  --color-on-surface: #e5e5e5;
+  --color-on-surface-variant: #888888;
+  --color-outline: #1f1f1f;
+  --color-outline-variant: #333333;
+
+  --font-headline: "Georgia", serif;
+  --font-body: "Helvetica Neue", "Arial", sans-serif;
+  --font-label: "Helvetica Neue", "Arial", sans-serif;
+  
+  --radius-sm: 4px;
+  --radius-md: 4px;
+  --radius-lg: 4px;
+  --radius-xl: 4px;
+  --radius-2xl: 4px;
+  --radius-3xl: 4px;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body selection:bg-secondary/30 antialiased;
+  }
+}
+
+.serif { font-family: "Georgia", serif; }
+.accent { color: #c5a47e; }
+
+.nav-link { 
+  font-size: 12px; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  color: #888; 
+  transition: color 0.3s; 
+}
+.nav-link:hover { color: #fff; }
+
+.card { 
+  background: #383838 !important; 
+  border: 1px solid #454545 !important; 
+  padding: 24px !important; 
+  border-radius: 4px !important; 
+}
+
+.footer-label { 
+  font-size: 10px; 
+  text-transform: uppercase; 
+  letter-spacing: 3px; 
+  color: #555; 
+}
+
+.glass-obsidian {
+  background: rgba(45, 45, 45, 0.7);
+  backdrop-filter: blur(20px);
+}
+
