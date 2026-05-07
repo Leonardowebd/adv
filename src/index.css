@@ -17,7 +17,7 @@
   --color-outline: #000000;
   --color-outline-variant: #FCFCFC;
 
-  --font-headline: "Georgia", serif;
+  --font-headline: #000000; "Georgia", serif;
   --font-body: "Helvetica Neue", "Arial", sans-serif;
   --font-label: "Helvetica Neue", "Arial", sans-serif;
   
