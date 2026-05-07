@@ -19,7 +19,7 @@ export default function Contato() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-24">
             <span className="text-secondary uppercase tracking-[0.4em] text-xs font-bold mb-4 block">Fale Conosco</span>
-            <h1 className="font-headline text-5xl md:text-7xl text-primary mb-6 italic">Inicie sua Consulta</h1>
+            <h1 className="font-headline text-5xl md:text-7xl text-on-surface mb-6 italic">Inicie sua Consulta</h1>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">

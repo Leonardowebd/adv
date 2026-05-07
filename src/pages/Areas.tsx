@@ -44,7 +44,7 @@ export default function Areas() {
     <main className="pt-40 pb-20 px-6">
       <div className="max-w-7xl mx-auto text-center mb-24">
         <span className="text-secondary uppercase tracking-[0.4em] text-xs font-bold mb-4 block">Especialidades</span>
-        <h1 className="font-headline text-5xl md:text-7xl text-primary mb-6 italic">Áreas de Atuação</h1>
+        <h1 className="font-headline text-5xl md:text-7xl text-on-surface mb-6 italic">Áreas de Atuação</h1>
         <p className="text-on-surface-variant max-w-2xl mx-auto text-lg leading-relaxed">
           Atendemos diversas vertentes do direito com foco em resultados precisos e atendimento humanizado.
         </p>

@@ -10,7 +10,7 @@ export default function Escritorio() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center mb-32">
           <div>
             <span className="text-secondary uppercase tracking-[0.4em] text-xs font-bold mb-4 block">Sobre Nós</span>
-            <h1 className="font-headline text-5xl md:text-7xl text-primary mb-8 italic">Tradição & Modernidade</h1>
+            <h1 className="font-headline text-5xl md:text-7xl text-on-surface mb-8 italic">Tradição & Modernidade</h1>
             <div className="space-y-6 text-on-surface-variant text-lg leading-relaxed">
               <p>
                 O Bitencourt & Dias Advogados nasceu da união de profissionais com vasta experiência na advocacia estratégica, com o propósito de oferecer segurança jurídica e proteção patrimonial de alta performance.
