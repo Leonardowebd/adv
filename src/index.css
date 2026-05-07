@@ -4,7 +4,7 @@
 @theme {
   --color-background: #E0E0E0;
   --color-primary: #e5e5e5;
-  --color-primary-container: #E8E8E8;
+  --color-primary-container: #000000;
   --color-secondary: #B58145;
   --color-surface: #ECECEC;
   --color-surface-container-low: #E5E5E5;
@@ -14,7 +14,7 @@
   --color-on-primary: #343434;
   --color-on-surface: #3D3D3D;
   --color-on-surface-variant: #888888;
-  --color-outline: #FAFAFA;
+  --color-outline: #000000;
   --color-outline-variant: #FCFCFC;
 
   --font-headline: "Georgia", serif;
