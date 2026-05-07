@@ -60,18 +60,25 @@ export default function Escritorio() {
                         name: "Dra. Tayara Magalhães Amaral", 
                         role: "Sócia | Direito Civil", 
                         oab: "OAB/BA 20.576",
-                        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
+                        image: "",
                         bio: "Mestre em Direito Tributário, com atuação na unidade Bahia voltada para o planejamento previdenciário e defesa do consumidor."
                     },
                 ].map((member, i) => (
                     <div key={i} className="card group p-0! overflow-hidden flex flex-col border-white/5">
-                        <div className="aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 relative">
-                            <img 
-                                src={member.image} 
-                                alt={member.name} 
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                referrerPolicy="no-referrer"
-                            />
+                        <div className="aspect-[3/4] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 relative bg-surface-container-high flex items-center justify-center">
+                            {member.image ? (
+                                <img
+                                    src={member.image}
+                                    alt={member.name}
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    referrerPolicy="no-referrer"
+                                />
+                            ) : (
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="w-24 h-24 text-on-surface-variant opacity-40">
+                                    <circle cx="12" cy="8" r="4" />
+                                    <path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+                                </svg>
+                            )}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                         </div>
                         <div className="p-8 border-t border-white/5 bg-surface-container-low flex-1">
