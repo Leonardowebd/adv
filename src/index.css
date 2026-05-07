@@ -2,20 +2,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #2d2d2d;
+  --color-background: #E0E0E0;
   --color-primary: #e5e5e5;
-  --color-primary-container: #383838;
+  --color-primary-container: #E8E8E8;
   --color-secondary: #c5a47e;
-  --color-surface: #2d2d2d;
-  --color-surface-container-low: #383838;
-  --color-surface-container-high: #454545;
-  --color-surface-container-highest: #4f4f4f;
-  --color-surface-container-lowest: #242424;
-  --color-on-primary: #D9D9D9;
-  --color-on-surface: #e5e5e5;
+  --color-surface: #ECECEC;
+  --color-surface-container-low: #E5E5E5;
+  --color-surface-container-high: #C0C0C0;
+  --color-surface-container-highest: #C7C7C7;
+  --color-surface-container-lowest: #F4F4F4;
+  --color-on-primary: #343434;
+  --color-on-surface: #3D3D3D;
   --color-on-surface-variant: #888888;
-  --color-outline: #1f1f1f;
-  --color-outline-variant: #333333;
+  --color-outline: #FAFAFA;
+  --color-outline-variant: #FCFCFC;
 
   --font-headline: "Georgia", serif;
   --font-body: "Helvetica Neue", "Arial", sans-serif;
@@ -48,8 +48,8 @@
 .nav-link:hover { color: #fff; }
 
 .card { 
-  background: #383838 !important; 
-  border: 1px solid #454545 !important; 
+  background: #C3C3C3 !important; 
+  border: 1px solid #999999 !important; 
   padding: 24px !important; 
   border-radius: 4px !important; 
 }
