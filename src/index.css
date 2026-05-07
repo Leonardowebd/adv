@@ -10,7 +10,7 @@
   --color-surface-container-low: #E5E5E5;
   --color-surface-container-high: #C0C0C0;
   --color-surface-container-highest: #C7C7C7;
-  --color-surface-container-lowest: #F4F4F4;
+  --color-surface-container-lowest: #252525;
   --color-on-primary: #343434;
   --color-on-surface: #3D3D3D;
   --color-on-surface-variant: #888888;
@@ -36,7 +36,7 @@
 }
 
 .serif { font-family: "Georgia", serif; }
-.accent { color: #c5a47e; }
+.accent { color: #ffffff; }
 
 .nav-link { 
   font-size: 12px; 
@@ -45,7 +45,7 @@
   color: #888; 
   transition: color 0.3s; 
 }
-.nav-link:hover { color: #fff; }
+.nav-link:hover { color: #c5a47e; }
 
 .card { 
   background: #C3C3C3 !important; 
