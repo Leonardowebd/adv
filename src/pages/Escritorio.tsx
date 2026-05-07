@@ -38,7 +38,7 @@ export default function Escritorio() {
         <div className="mb-32">
             <div className="text-center mb-20">
                 <span className="text-accent uppercase tracking-[0.4em] text-xs font-bold mb-4 block underline underline-offset-8 decoration-accent/30">Liderança Especializada</span>
-                <h2 className="font-headline text-4xl md:text-6xl text-primary italic">Corpo Jurídico</h2>
+                <h2 className="font-headline text-4xl md:text-6xl text-on-surface italic">Corpo Jurídico</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -118,7 +118,7 @@ export default function Home() {
 
           <div>
             <span className="text-secondary uppercase tracking-[0.3em] text-xs font-bold mb-4 block">Nossa Proposta</span>
-            <h2 className="font-headline text-4xl md:text-5xl text-primary mb-8 leading-tight">
+            <h2 className="font-headline text-4xl md:text-5xl text-on-surface mb-8 leading-tight">
               Compromisso ético com <br />
               <span className="italic font-light">soluções eficientes</span>
             </h2>
@@ -155,7 +155,7 @@ export default function Home() {
           
           <div className="max-w-7xl mx-auto text-center mb-20">
             <span className="text-secondary uppercase tracking-[0.3em] text-xs font-bold mb-4 block">Especialidades</span>
-            <h2 className="font-headline text-4xl md:text-6xl text-primary">Nossas Áreas de Atuação</h2>
+            <h2 className="font-headline text-4xl md:text-6xl text-on-surface">Nossas Áreas de Atuação</h2>
           </div>
 
           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

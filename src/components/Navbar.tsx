@@ -20,6 +20,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const isHome = location.pathname === '/';
+  const navLight = isHome || scrolled;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +46,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-3 group">
           <Logo className="w-12 h-11 transform group-hover:scale-105 transition-transform" />
           <div className="flex flex-col leading-tight">
-            <span className="font-headline text-lg tracking-wide uppercase text-primary">Bitencourt & Dias</span>
+            <span className={`font-headline text-lg tracking-wide uppercase ${navLight ? 'text-white' : 'text-on-surface'}`}>Bitencourt & Dias</span>
             <span className="text-[10px] tracking-[0.2em] uppercase text-secondary font-medium">Advogados Associados</span>
           </div>
         </Link>
@@ -52,11 +54,13 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-10">
           {NAV_LINKS.map((link) => (
-            <Link 
-              key={link.path} 
+            <Link
+              key={link.path}
               to={link.path}
               className={`nav-link ${
-                location.pathname === link.path ? 'text-white' : ''
+                location.pathname === link.path
+                  ? 'text-secondary'
+                  : navLight ? 'text-white' : 'text-on-surface'
               }`}
             >
               {link.name}
@@ -72,8 +76,8 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Toggle */}
-        <button 
-          className="md:hidden text-primary p-2"
+        <button
+          className={`md:hidden p-2 ${navLight ? 'text-white' : 'text-on-surface'}`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X /> : <Menu />}
