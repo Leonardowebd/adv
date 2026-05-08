@@ -101,7 +101,7 @@ export default function Escritorio() {
                 { title: "Valores", desc: "Integridade inquestionável, foco absoluto no cliente e busca constante pela inovação jurídica." }
             ].map((item, i) => (
                 <div key={i} className="p-12 glass-obsidian border border-white/5 rounded-3xl">
-                    <h3 className="font-headline text-3xl text-secondary mb-6 italic">{item.title}</h3>
+                    <h3 className="font-headline text-3xl text-white mb-6 italic">{item.title}</h3>
                     <p className="text-on-surface-variant leading-relaxed">{item.desc}</p>
                 </div>
             ))}
